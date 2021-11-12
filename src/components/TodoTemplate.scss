@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "pixelFont"; /* 폰트 */
+  src: url("../fonts/DOSMyungjo.ttf");
+}
+
+.TodoTemplate {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .orangeImages {
+    background: white;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .app-title {
+    background: white;
+    color: black;
+    height: 5rem;
+    font-size: 2rem;
+    font-family: pixelFont;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    background: white;
+  }
+}

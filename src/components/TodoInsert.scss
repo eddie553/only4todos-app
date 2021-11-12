@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "pixelFont"; /* 폰트 */
+  src: url("../fonts/DOSMyungjo.ttf");
+}
+
+.TodoInsert {
+  display: flex;
+  background: white;
+
+  input {
+    position: relative;
+    left: 250px;
+    width: 500px;
+    //  background: none;
+    outline: none;
+    border: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-family: pixelFont;
+    line-height: 1.5;
+    color: black; //글자입력색
+    text-transform: uppercase;
+    text-align: center;
+    &::placeholder {
+      color: orange; //플레이스홀더
+      font-style: italic;
+      text-transform: uppercase;
+      text-decoration: overline;
+      text-align: center;
+    }
+    //  flex: 1; //버튼 제외 영역 모두 차지하기;
+  }
+
+  button {
+    position: relative;
+    left: 250px;
+    background: none;
+    outline: none;
+    border: none;
+    //background: #868e96;
+    color: black; //add 글자 색
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.25rem;
+    font-family: pixelFont;
+    font-style: italic;
+    display: flex;
+    // align-items: center;
+    cursor: pointer;
+    transition: 0.1s color ease-in;
+    &:hover {
+      color: gray; //add 온커서색
+    }
+  }
+  align-items: center;
+  justify-items: center;
+}

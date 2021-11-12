@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+## 중앙대 전자전기공학부 김나은(20173639) 종합설계
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 지도교수님 : 송오영 교수님
 
-## Available Scripts
+# only 4 todos-application
 
-In the project directory, you can run:
+본 프로젝트에서는 todo-application에서 사용자의 todo 완료률과 사용 기간을 높이기 위한 방법을 고안하고자 하였다. 따라서 리액트를 활용하여 web기반의 todo-application에 추가 기능을 더하여 구현하였다. 기본적인 todo-application의 할 일 추가, 삭제, 완료 기능에서 할 일의 개수를 4개로 제한하고 다섯 번째 할 일을 추가하고자 할 때 경고 팝업이 나타나게 한다. 또한, 완료한 할 일의 개수에 맞추어 껍질이 까진 오렌지의 이미지가 조건부로 렌더링 되도록 하며, 4개의 할 일을 모두 완료하였을 때 오렌지 주스의 이미지가 렌더링되어 사용자가 할 일 성취감을 느낄 수 있도록 한다. 앞에서 언급한 기능을 포함한 todo-application은 children으로 내부 JSX를 props로 받아와 렌더링하는 TodoTemplate, 조건부 렌더링을 하는 TodoTitle과 TodoListItem, todo 객체를 추가하는 TodoInsert, todos 배열의 요소를 받아와 각각의 TodoListItem 컴포넌트로 변환하는 TodoList로 이루어져 only 4 todos web-application을 구현하였다.
 
-### `yarn start`
+### 사용한 라이브러리
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 리액트
+- node-sass
+- classnames
+- react-icons
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### src의 이미지는 본인이 직접 제작함
 
-### `yarn test`
+### 해당 프로젝트는 '리액트를 다루는 기술' 개정판을 참고하여 진행함 (이전 chapter의 git로그가 남아있는데 git 기록은 무시부탁드립니다.)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 마지막 git 업데이트의 src 파일만 참고해주세요.

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:3000/? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style>body {
+  margin: 0;
+  padding: 0;
+  background: gray;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBUztFQUNULFVBQVU7RUFDVixnQkFBZ0I7QUFDbEIiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xuICBiYWNrZ3JvdW5kOiBncmF5O1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>@charset "UTF-8";
+@font-face {
+  font-family: "pixelFont";
+  /* 폰트 */
+  src: url(/static/media/DOSMyungjo.1479fe3c.ttf); }
+
+.TodoTemplate {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  border-radius: 4px;
+  overflow: hidden; }
+  .TodoTemplate .orangeImages {
+    background: white;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .TodoTemplate .app-title {
+    background: white;
+    color: black;
+    height: 5rem;
+    font-size: 2rem;
+    font-family: pixelFont;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .TodoTemplate .content {
+    background: white; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvY29tcG9uZW50cy9Ub2RvVGVtcGxhdGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxnQkFBZ0I7QUFBaEI7RUFDRSx3QkFBd0I7RUFBRSxPQUFBO0VBQzFCLDRDQUFtQyxFQUFBOztBQUdyQztFQUNFLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsZ0JBQWdCLEVBQUE7RUFObEI7SUFTSSxpQkFBaUI7SUFDakIsYUFBYTtJQUNiLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCLEVBQUE7RUFiM0I7SUFpQkksaUJBQWlCO0lBQ2pCLFlBQVk7SUFDWixZQUFZO0lBQ1osZUFBZTtJQUNmLHNCQUFzQjtJQUN0QixhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1QixFQUFBO0VBeEIzQjtJQTJCSSxpQkFBaUIsRUFBQSIsInNvdXJjZXNDb250ZW50IjpbIkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogXCJwaXhlbEZvbnRcIjsgLyog7Y+w7Yq4ICovXG4gIHNyYzogdXJsKFwiLi4vZm9udHMvRE9TTXl1bmdqby50dGZcIik7XG59XG5cbi5Ub2RvVGVtcGxhdGUge1xuICB3aWR0aDogMTAyNHB4O1xuICBtYXJnaW4tbGVmdDogYXV0bztcbiAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xuICBtYXJnaW4tdG9wOiA0cmVtO1xuICBib3JkZXItcmFkaXVzOiA0cHg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgLm9yYW5nZUltYWdlcyB7XG4gICAgYmFja2dyb3VuZDogd2hpdGU7XG4gICAgaGVpZ2h0OiAxMHJlbTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIH1cblxuICAuYXBwLXRpdGxlIHtcbiAgICBiYWNrZ3JvdW5kOiB3aGl0ZTtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgaGVpZ2h0OiA1cmVtO1xuICAgIGZvbnQtc2l6ZTogMnJlbTtcbiAgICBmb250LWZhbWlseTogcGl4ZWxGb250O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgfVxuICAuY29udGVudCB7XG4gICAgYmFja2dyb3VuZDogd2hpdGU7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>@charset "UTF-8";
+@font-face {
+  font-family: "pixelFont";
+  /* 폰트 */
+  src: url(/static/media/DOSMyungjo.1479fe3c.ttf); }
+
+.TodoInsert {
+  margin-top: 50px;
+  display: flex;
+  background: white;
+  align-items: center;
+  justify-items: center; }
+  .TodoInsert input {
+    position: relative;
+    left: 250px;
+    width: 500px;
+    outline: none;
+    border: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-family: pixelFont;
+    line-height: 1.5;
+    color: black;
+    text-transform: uppercase;
+    text-align: center; }
+    .TodoInsert input::placeholder {
+      color: orange;
+      font-style: italic;
+      text-transform: uppercase;
+      text-decoration: overline;
+      text-align: center; }
+  .TodoInsert button {
+    position: relative;
+    left: 250px;
+    background: none;
+    outline: none;
+    border: none;
+    color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.25rem;
+    font-family: pixelFont;
+    font-style: italic;
+    display: flex;
+    cursor: pointer;
+    transition: 0.1s color ease-in; }
+    .TodoInsert button:hover {
+      color: gray; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvY29tcG9uZW50cy9Ub2RvSW5zZXJ0LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsZ0JBQWdCO0FBQWhCO0VBQ0Usd0JBQXdCO0VBQUUsT0FBQTtFQUMxQiw0Q0FBbUMsRUFBQTs7QUFHckM7RUFDRSxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLGlCQUFpQjtFQStDakIsbUJBQW1CO0VBQ25CLHFCQUFxQixFQUFBO0VBbkR2QjtJQU1JLGtCQUFrQjtJQUNsQixXQUFXO0lBQ1gsWUFBWTtJQUVaLGFBQWE7SUFDYixjQUFjO0lBQ2QsZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixzQkFBc0I7SUFDdEIsZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWix5QkFBeUI7SUFDekIsa0JBQWtCLEVBQUE7SUFsQnRCO01Bb0JNLGFBQWE7TUFDYixrQkFBa0I7TUFDbEIseUJBQXlCO01BQ3pCLHlCQUF5QjtNQUN6QixrQkFBa0IsRUFBQTtFQXhCeEI7SUE4Qkksa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCxnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLFlBQVk7SUFFWixZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsc0JBQXNCO0lBQ3RCLGtCQUFrQjtJQUNsQixhQUFhO0lBRWIsZUFBZTtJQUNmLDhCQUE4QixFQUFBO0lBN0NsQztNQStDTSxXQUFXLEVBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJAZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IFwicGl4ZWxGb250XCI7IC8qIO2PsO2KuCAqL1xuICBzcmM6IHVybChcIi4uL2ZvbnRzL0RPU015dW5nam8udHRmXCIpO1xufVxuXG4uVG9kb0luc2VydCB7XG4gIG1hcmdpbi10b3A6IDUwcHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGJhY2tncm91bmQ6IHdoaXRlO1xuXG4gIGlucHV0IHtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgbGVmdDogMjUwcHg7XG4gICAgd2lkdGg6IDUwMHB4O1xuICAgIC8vICBiYWNrZ3JvdW5kOiBub25lO1xuICAgIG91dGxpbmU6IG5vbmU7XG4gICAgYm9yZGVyOiAwLjVyZW07XG4gICAgcGFkZGluZzogMC41cmVtO1xuICAgIGZvbnQtc2l6ZTogMS4yNXJlbTtcbiAgICBmb250LWZhbWlseTogcGl4ZWxGb250O1xuICAgIGxpbmUtaGVpZ2h0OiAxLjU7XG4gICAgY29sb3I6IGJsYWNrOyAvL+q4gOyekOyeheugpeyDiVxuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgICY6OnBsYWNlaG9sZGVyIHtcbiAgICAgIGNvbG9yOiBvcmFuZ2U7IC8v7ZSM66CI7J207Iqk7ZmA642UXG4gICAgICBmb250LXN0eWxlOiBpdGFsaWM7XG4gICAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xuICAgICAgdGV4dC1kZWNvcmF0aW9uOiBvdmVybGluZTtcbiAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICB9XG4gICAgLy8gIGZsZXg6IDE7IC8v67KE7Yq8IOygnOyZuCDsmIHsl60g66qo65GQIOywqOyngO2VmOq4sDtcbiAgfVxuXG4gIGJ1dHRvbiB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIGxlZnQ6IDI1MHB4O1xuICAgIGJhY2tncm91bmQ6IG5vbmU7XG4gICAgb3V0bGluZTogbm9uZTtcbiAgICBib3JkZXI6IG5vbmU7XG4gICAgLy9iYWNrZ3JvdW5kOiAjODY4ZTk2O1xuICAgIGNvbG9yOiBibGFjazsgLy9hZGQg6riA7J6QIOyDiVxuICAgIHBhZGRpbmctbGVmdDogMXJlbTtcbiAgICBwYWRkaW5nLXJpZ2h0OiAxcmVtO1xuICAgIGZvbnQtc2l6ZTogMS4yNXJlbTtcbiAgICBmb250LWZhbWlseTogcGl4ZWxGb250O1xuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIC8vIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIHRyYW5zaXRpb246IDAuMXMgY29sb3IgZWFzZS1pbjtcbiAgICAmOmhvdmVyIHtcbiAgICAgIGNvbG9yOiBncmF5OyAvL2FkZCDsmKjsu6TshJzsg4lcbiAgICB9XG4gIH1cbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1pdGVtczogY2VudGVyO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>@charset "UTF-8";
+@font-face {
+  font-family: "pixelFont";
+  /* 폰트 */
+  src: url(/static/media/DOSMyungjo.1479fe3c.ttf); }
+
+.TodoListItem {
+  font-family: pixelFont;
+  font-size: 1.25rem;
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+  .TodoListItem .checkbox {
+    cursor: pointer;
+    display: flex;
+    align-items: center; }
+    .TodoListItem .checkbox svg {
+      font-size: 1.5rem; }
+    .TodoListItem .checkbox .text {
+      margin-left: 1rem; }
+    .TodoListItem .checkbox.checked svg {
+      color: black; }
+    .TodoListItem .checkbox.checked .text {
+      color: #adb5bd;
+      text-decoration: line-through; }
+  .TodoListItem .remove {
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #ff6b6b;
+    cursor: pointer; }
+    .TodoListItem .remove:hover {
+      color: #ff8787; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvY29tcG9uZW50cy9Ub2RvTGlzdEl0ZW0uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxnQkFBZ0I7QUFBaEI7RUFDRSx3QkFBd0I7RUFBRSxPQUFBO0VBQzFCLDRDQUFtQyxFQUFBOztBQUVyQztFQUNFLHNCQUFzQjtFQUN0QixrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLGFBQWE7RUFDYixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLHVCQUF1QixFQUFBO0VBUHpCO0lBVUksZUFBZTtJQUVmLGFBQWE7SUFDYixtQkFBbUIsRUFBQTtJQWJ2QjtNQWdCTSxpQkFBaUIsRUFBQTtJQWhCdkI7TUFtQk0saUJBQWlCLEVBQUE7SUFuQnZCO01BeUJRLFlBQVksRUFBQTtJQXpCcEI7TUE0QlEsY0FBYztNQUNkLDZCQUE2QixFQUFBO0VBN0JyQztJQWtDSSxhQUFhO0lBQ2Isa0JBQWtCO0lBQ2xCLG1CQUFtQjtJQUNuQixpQkFBaUI7SUFDakIsY0FBYztJQUNkLGVBQWUsRUFBQTtJQXZDbkI7TUF5Q00sY0FBYyxFQUFBIiwic291cmNlc0NvbnRlbnQiOlsiQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBcInBpeGVsRm9udFwiOyAvKiDtj7DtirggKi9cbiAgc3JjOiB1cmwoXCIuLi9mb250cy9ET1NNeXVuZ2pvLnR0ZlwiKTtcbn1cbi5Ub2RvTGlzdEl0ZW0ge1xuICBmb250LWZhbWlseTogcGl4ZWxGb250O1xuICBmb250LXNpemU6IDEuMjVyZW07XG4gIHBhZGRpbmc6IDFyZW07XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjsgLy8g7IS466GcIOykkeyVmSDsoJXroKxcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG5cbiAgLmNoZWNrYm94IHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgLy8gZmxleDogMTsgLy8g7LCo7KeA7ZWgIOyImCDsnojripQg7JiB7JetIOuqqOuRkCDssKjsp4BcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7IC8vIOyEuOuhnCDspJHslZkg7KCV66CsXG4gICAgc3ZnIHtcbiAgICAgIC8vIOyVhOydtOy9mFxuICAgICAgZm9udC1zaXplOiAxLjVyZW07XG4gICAgfVxuICAgIC50ZXh0IHtcbiAgICAgIG1hcmdpbi1sZWZ0OiAxcmVtO1xuICAgICAgLy8gZmxleDogMTsgLy8g7LCo7KeA7ZWgIOyImCDsnojripQg7JiB7JetIOuqqOuRkCDssKjsp4BcbiAgICB9XG4gICAgLy8g7LK07YGs65CY7JeI7J2EIOuVjCDrs7Tsl6zspIQg7Iqk7YOA7J28XG4gICAgJi5jaGVja2VkIHtcbiAgICAgIHN2ZyB7XG4gICAgICAgIGNvbG9yOiBibGFjaztcbiAgICAgIH1cbiAgICAgIC50ZXh0IHtcbiAgICAgICAgY29sb3I6ICNhZGI1YmQ7XG4gICAgICAgIHRleHQtZGVjb3JhdGlvbjogbGluZS10aHJvdWdoO1xuICAgICAgfVxuICAgIH1cbiAgfVxuICAucmVtb3ZlIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIHBhZGRpbmctbGVmdDogMXJlbTtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGZvbnQtc2l6ZTogMS41cmVtO1xuICAgIGNvbG9yOiAjZmY2YjZiO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAmOmhvdmVyIHtcbiAgICAgIGNvbG9yOiAjZmY4Nzg3O1xuICAgIH1cbiAgfVxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.TodoList {
+  margin-top: 50px;
+  min-height: 320px;
+  max-height: 513px; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvY29tcG9uZW50cy9Ub2RvTGlzdC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQixpQkFBaUIsRUFBQSIsInNvdXJjZXNDb250ZW50IjpbIi5Ub2RvTGlzdCB7XG4gIG1hcmdpbi10b3A6IDUwcHg7XG4gIG1pbi1oZWlnaHQ6IDMyMHB4O1xuICBtYXgtaGVpZ2h0OiA1MTNweDtcbiAgLy8gb3ZlcmZsb3cteTogYXV0bztcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="TodoTemplate"><div class="app-title">&nbsp;Only 4 Things to do today</div><div class="content"><button>countingUnchecked</button><form class="TodoInsert"><input placeholder="write 4things to do " value=""><button type="submit">add</button></form><div class="TodoList"><div class="TodoListItem"><div class="checkbox checked"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg><div class="text">thing to do 1</div></div><div class="remove"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg></div></div><div class="TodoListItem"><div class="checkbox checked"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg><div class="text">thing to do 2</div></div><div class="remove"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg></div></div><div class="TodoListItem"><div class="checkbox"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg><div class="text">thing to do 3</div></div><div class="remove"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg></div></div><div class="TodoListItem"><div class="checkbox"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg><div class="text">thing to do 4</div></div><div class="remove"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg></div></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js"></script><script src="./React App_files/vendors_main.chunk.js"></script><script src="./React App_files/main.chunk.js"></script>
+
+</body></html>
