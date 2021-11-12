@@ -13,6 +13,15 @@
 - classnames
 - react-icons
 
+
+### 컴포넌트 구성
+  - TodoTemplate.js : 화면을 가운데에 정렬, 앱 타이틀 보여줌 (children으로 내부 JSX를 props로 받아와 렌더링)
+  - TodoInsert.js : 입력 및 추가 (state를 통해 인풋 상태 관리)
+  - TodoListItem.js : 각 할 일 항목에 대한 정보 (todo 객체를 props로 받아와 상태에 따라 다른 UI )
+  - TodoList.js : todos배열을 받아와 map 함수를 이용하여 TodoListItem 컴포넌트로 변환하여 보여줌 (props로 todos 배열을 받아옴)
+  - TodoTitle.js : numberOfChecked로 완료된 할 일 개수를 받아와 개수에 따른 타이틀 오렌지 이미지를 조건부 렌더링
+
+
 ### src의 이미지는 본인이 직접 제작함
 
 #### 참고문헌 : 해당 프로젝트는 '리액트를 다루는 기술' 개정판
